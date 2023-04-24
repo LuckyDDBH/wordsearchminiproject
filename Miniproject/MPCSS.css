@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+Overskrift {font-weight: bold; font-size: 36px; color:red}
+
+parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#png1 {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+#png2 {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:1;
+}
