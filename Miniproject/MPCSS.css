@@ -4,22 +4,12 @@ body {
 
 Overskrift {font-weight: bold; font-size: 36px; color:red}
 
-parent {
+.image-container {
   position: relative;
-  top: 0;
-  left: 0;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
-#png1 {
-    position:relative;
-    top:0;
-    left:0;
-    z-index:0;
-}
-
-#png2 {
-    position:relative;
-    top:0;
-    left:0;
-    z-index:1;
+img {
+  position: absolute;
 }
