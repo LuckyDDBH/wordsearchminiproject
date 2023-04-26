@@ -5,8 +5,15 @@
             $name= $_POST["name"];
             $email= $_POST["email"];
             
-            $sql= "INSERT INTO `users` (`name`, `email`) VALUES ("$name, $email")";
+            $sql= "INSERT INTO `users` (`name`, `email`) VALUES ('$name', '$email')";
             
-            $query = mysql_query($)
+            $query = mysqli_query($conn,$sql);
+            if($query){
+                echo "Entry Successfull";
+            }
+            else {
+                echo "Error occurred, try again";
+            }
         }
     }
+?>
