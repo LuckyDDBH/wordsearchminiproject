@@ -1,3 +1,3 @@
 # wordsearchminiproject
 a miniproject on making a wordsearch
-http://localhost/wordsearchminiproject/Miniproject
+http://localhost/Miniproject/wordsearchminiproject/Miniproject
