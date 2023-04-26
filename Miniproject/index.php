@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,8 +16,15 @@
         <label for="email">E-mail: </label> <br>
         <input type="email" name="email" id="email" required/> <br><br>
         
-        <input type="submit" name="submit" id="submit"/>
+        <input type="submit" name="submit" id="submit" onClick="redirect()"/>
         
     </form>
+    
+    <script>
+      function redirect() {
+        window.location.href="Main.html";  
+      }
+    </script>
+
 </body>
 </html>
