@@ -16,15 +16,10 @@
         <label for="email">E-mail: </label> <br>
         <input type="email" name="email" id="email" required/> <br><br>
         
-        <input type="submit" name="submit" id="submit" onClick="redirect()"/>
+        <input type="submit" name="submit" id="submit"/>
         
     </form>
     
-    <script>
-      function redirect() {
-        window.location.href="Main.html";  
-      }
-    </script>
 
 </body>
 </html>
