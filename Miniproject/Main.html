@@ -8,9 +8,10 @@
 <body>
 
     <h1><Overskrift>Ice cream flavor wordsearch</Overskrift></h1>
-    Find the names of five ice cream flavors among the random letters<br><br>
+    Find the names of five ice cream flavors among the random letters<br>
+    Write your answers in lowercase letters<br><br>
     <textarea id="textinput" name="textinput" rows="1" cols="45" maxlength="9" placeholder="Write your guess here and press the button"></textarea>
-    <br><br>
+    <br>
     
     <button id="guessButton" class="float-left submit-button" >Guess</button>
     
@@ -55,8 +56,25 @@
         };
     </script>
     
-    <br><br>
+
+    <h2>Demonstration</h2>
+        Press this button to make AJAX reveal the answers<br>
+    <div id="demo">
+    <button type="button" onclick="loadAnswerSheet()">Reveal Answers</button>
+    </div><br><br>
     
+    <script>
+    function loadAnswerSheet() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+    }
+    xhttp.open("GET", "AnswerSheet.txt");
+    xhttp.send();
+}
+</script>
+
 
     <div class="image-container">
      <!--   <img src="images/MyWordSearchBG.png"> -->
