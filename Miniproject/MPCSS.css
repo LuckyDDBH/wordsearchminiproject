@@ -5,9 +5,7 @@ body {
 Overskrift {font-weight: bold; font-size: 36px; color:red}
 
 .image-container {
-  position: relative;
-  left: 40%;
-  transform: translate(-60%, -50%);
+    width:80%;
 }
 
 img {
