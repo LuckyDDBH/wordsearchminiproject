@@ -8,7 +8,7 @@
 
 <h1> Wordsearch Login Page </h1>
 <body>
-    <div><h2>Registrate Account</h2></div>
+    <div><h2>Register Account</h2></div>
     <form action="connect.php" method="POST">
         <label for="user">Name:</label><br>
         <input type="text" name="name" id="name" required/> <br> <br>
