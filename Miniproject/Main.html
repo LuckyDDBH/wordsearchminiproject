@@ -8,8 +8,9 @@
 <body>
 
     <h1><Overskrift>Ice cream flavor wordsearch</Overskrift></h1>
-        <textarea id="textinput" name="textinput" rows="1" cols="30" maxlength="9" placeholder="Write your guess here"></textarea>
-    <br>
+    Find the names of five ice cream flavors among the random letters<br><br>
+    <textarea id="textinput" name="textinput" rows="1" cols="45" maxlength="9" placeholder="Write your guess here and press the button"></textarea>
+    <br><br>
     
     <button id="guessButton" class="float-left submit-button" >Guess</button>
     
@@ -26,22 +27,22 @@
                 document.getElementById("textinput").value = "";
                 document.getElementById("textinput").placeholder = "Correct";
             }
-            if(document.getElementById("textinput").value == chocSolve) {
+            else if(document.getElementById("textinput").value == chocSolve) {
                 document.getElementById("chocolateMarker").style.display = "inline-block";
                 document.getElementById("textinput").value = "";
                 document.getElementById("textinput").placeholder = "Correct";
             }
-            if(document.getElementById("textinput").value == coffSolve) {
+            else if(document.getElementById("textinput").value == coffSolve) {
                 document.getElementById("coffeeMarker").style.display = "inline-block";
                 document.getElementById("textinput").value = "";
                 document.getElementById("textinput").placeholder = "Correct";
             }
-            if(document.getElementById("textinput").value == mintSolve) {
+            else if(document.getElementById("textinput").value == mintSolve) {
                 document.getElementById("mintMarker").style.display = "inline-block";
                 document.getElementById("textinput").value = "";
                 document.getElementById("textinput").placeholder = "Correct";
             }
-            if(document.getElementById("textinput").value == vaniSolve) {
+            else if(document.getElementById("textinput").value == vaniSolve) {
                 document.getElementById("vanillaMarker").style.display = "inline-block";
                 document.getElementById("textinput").value = "";
                 document.getElementById("textinput").placeholder = "Correct";
@@ -54,9 +55,8 @@
         };
     </script>
     
-    <br>
-    Centered Heading<br>
-    Centered paragraph<br>
+    <br><br>
+    
 
     <div class="image-container">
      <!--   <img src="images/MyWordSearchBG.png"> -->

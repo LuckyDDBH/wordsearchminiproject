@@ -9,7 +9,7 @@
             
             $query = mysqli_query($conn,$sql);
             if($query){
-                echo "Entry Successfull";
+                echo "Entry Successful";
              // echo <button onclick = "window.location.href='Main.html';">Go to Game</button>;
 
             }
