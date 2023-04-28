@@ -16,16 +16,15 @@
     </div><br><br>
     
     <script>
-    function loadAnswerSheet() {
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {
-            document.getElementById("demo").innerHTML =
-            this.responseText;
-    }
-    xhttp.open("GET", "AnswerSheet.txt");
-    xhttp.send();
-}
-</script>
+        function loadAnswerSheet() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("demo").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "AnswerSheet.txt");
+        xhttp.send();
+        }
+    </script>
     
         Write your answers in lowercase letters<br><br>
     <textarea id="textinput" name="textinput" rows="1" cols="45" maxlength="9" placeholder="Write your guess here and press the button"></textarea>
